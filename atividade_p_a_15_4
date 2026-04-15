@@ -1,0 +1,252 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sophiaalvarezvega/P.A-1-E-grupo-B/blob/main/atividade_p_a_15_4\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#1 Fazer um programa que identifica se o número é par ou ímpar:\n",
+        "\n",
+        "numero = int(input(\"Digite um número: \"))\n",
+        "\n",
+        "if numero % 2 == 0:\n",
+        "    print(\"Esse número é par\")\n",
+        "else:\n",
+        "    print(\"Esse número é ímpar\")"
+      ],
+      "metadata": {
+        "id": "C_qvnxGPrcgx"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#2 Criar um programa que solicite dois números e mostre qual é o maior (ou se são iguais\n",
+        "\n",
+        "numero1 = int(input(\"Digite um número: \"))\n",
+        "numero2 = int(input(\"Digite um outro número: \"))\n",
+        "\n",
+        "if numero1 > numero2:\n",
+        "    print(\"O primeiro número é o maior\")\n",
+        "elif numero1 == numero2:\n",
+        "    print(\"Os números são iguais\")\n",
+        "else:\n",
+        "    print(\"O segundo número é maior\")"
+      ],
+      "metadata": {
+        "id": "3sYtJQzDt4VE"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#3 Programa que recebe 4 notas, calcula a média e diz se o aluno foi aprovado.\n",
+        "\n",
+        "print(\"As notas não podem ser maior que 10\")\n",
+        "nota1 = float(input(\"Digite a nota 1 bimestre: \"))\n",
+        "nota2 = float(input(\"Digite a nota 2 bimestre: \"))\n",
+        "nota3 = float(input(\"Digite a nota 3 bimestre: \"))\n",
+        "nota4 = float(input(\"Digite a nota 4 bimestre: \"))\n",
+        "\n",
+        "resultado = (nota1 + nota2 + nota3 + nota4) / 4\n",
+        "\n",
+        "if resultado >= 7:\n",
+        "  print(f\"Sua nota foi {resultado}, você foi aprovado :)\")\n",
+        "\n",
+        "elif resultado <= 5 and resultado < 7:\n",
+        "  print(\"Você terá que fazer a recuperação :/\")\n",
+        "\n",
+        "else:\n",
+        "  print(f\"Você tirou {resultado}, foi reprovado :(\")"
+      ],
+      "metadata": {
+        "id": "Jdmc9S5duXP0"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#4 Receber a idade e classsificar: Criança (0-12) Adolescente (13-17) Adulto (18-59) e Idoso (60+)\n",
+        "\n",
+        "idade = int(input(\"Digite sua idade: \"))\n",
+        "\n",
+        "if idade <= 12:\n",
+        "    print(\"Você é uma criança\")\n",
+        "elif idade > 12 and idade < 17:\n",
+        "    print(\"Você é um adolescente\")\n",
+        "elif idade > 17 and idade < 59:\n",
+        "    print(\"Você é um adulto\")\n",
+        "else:\n",
+        "    print(\"Você é um idoso\")"
+      ],
+      "metadata": {
+        "id": "GTyQea9XvpAf"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#5 Definir uma senha fixa. Pedir para o usuário digitar e dizer se está correta ou não.\n",
+        "\n",
+        "senha_fixa = 12345\n",
+        "senha_usuario = int(input(\"Digite sua senha: \"))\n",
+        "\n",
+        "if senha_usuario == 12345:\n",
+        "    print(\"A senha está correta\")\n",
+        "else:\n",
+        "   print(\"A senha está incorreta. Tente novamente.\")\n"
+      ],
+      "metadata": {
+        "id": "t_ivIgMNyBPO"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#6 Receber um número e dizer se ele é positivo, negativo ou 0.\n",
+        "\n",
+        "numero = int(input(\"Digite seu número\"))\n",
+        "\n",
+        "if numero > 0:\n",
+        "  print(\"O número é positivo\")\n",
+        "elif numero == 0:\n",
+        "  print(\"O número é 0\")\n",
+        "else:\n",
+        "  print(\"O número é negativo\")"
+      ],
+      "metadata": {
+        "id": "W_Qr4GblzdN_"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#7 Operador aritmético\n",
+        "\n",
+        "a = int(input(\"Digite um numero: \"))\n",
+        "b = int(input(\"Digite um outro numero: \"))\n",
+        "\n",
+        "soma = a + b\n",
+        "subtração = a - b\n",
+        "divisão = b/a\n",
+        "div_int = b//a\n",
+        "resto_da_divisao_é = b % a\n",
+        "multiplicação = a * b\n",
+        "potenciação = a ** b\n",
+        "\n",
+        "print(f\"O resultado de {a} mais {b} é igual a {soma}\")\n",
+        "print(f\"O resultado de {a} menos {b} é igual a {subtração}\")\n",
+        "print(f\"O resultado de {b} dividido por {a} é igual a {divisão}\")\n",
+        "print(f\"O resultado inteiro de {b} dividido por {a} é igual a {div_int} e seu resto é {resto_da_divisao_é}\")\n",
+        "print(f\"O resultado de {a} multiplicado por {b} é igual a {multiplicação}\")\n"
+      ],
+      "metadata": {
+        "id": "sPVD9Rzs0WLe"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#8 Dia da semana\n",
+        "\n",
+        "numero = int(input(\"Digite um número de 1 a 7\"))\n",
+        "\n",
+        "if numero == 1:\n",
+        "  print(\"É domingo\")\n",
+        "elif numero == 2:\n",
+        "  print(\"É segunda-feira\")\n",
+        "elif numero == 3:\n",
+        "  print(\"É terça-feira\")\n",
+        "elif numero == 4:\n",
+        "  print(\"É quarta-feira\")\n",
+        "elif numero == 5:\n",
+        " print(\"É quinta-feira\")\n",
+        "elif numero == 6:\n",
+        " print(\"É sexta-feira\")\n",
+        "elif numero == 7:\n",
+        " print(\"É sábado\")"
+      ],
+      "metadata": {
+        "id": "EnnM4-bi2i5u"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#9 Ano bissexto\n",
+        "\n",
+        "ano = int(input(\"Digite o ano: \"))\n",
+        "\n",
+        "if ano % 400 == 0:\n",
+        "  print(\"É bissexto\")\n",
+        "elif ano % 100 == 0:\n",
+        "  print(\"Não é bissexto\")\n",
+        "elif ano % 4 == 0:\n",
+        "  print(\"É bissexto\")\n",
+        "else:\n",
+        "  print(\"Não é bissexto\")"
+      ],
+      "metadata": {
+        "id": "kKFIi7R94aZZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#10 Descontos\n",
+        "\n",
+        "valor = int(input(\"Digite o valor da compra: \"))\n",
+        "\n",
+        "if valor ≥ 100:\n",
+        " print(10% de desconto)\n",
+        "elif valor ≥ 50 e < 100:\n",
+        "  print(5% de desconto)\n",
+        "elif valor < 50:\n",
+        "  print(\"sem desconto\")"
+      ],
+      "metadata": {
+        "id": "API9NIN45xUI"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
